@@ -1,9 +1,9 @@
 #!/bin/bash
 
-AKS_RESOURCE_GROUP=
-AKS_CLUSTER_NAME=
-ACR_RESOURCE_GROUP=
-ACR_NAME=
+AKS_RESOURCE_GROUP=click
+AKS_CLUSTER_NAME=clicksolutions
+ACR_RESOURCE_GROUP=click
+ACR_NAME=clicksolreg
 
 # Get the id of the service principal configured for AKS
 CLIENT_ID=$(az aks show --resource-group $AKS_RESOURCE_GROUP --name $AKS_CLUSTER_NAME --query "servicePrincipalProfile.clientId" --output tsv)
